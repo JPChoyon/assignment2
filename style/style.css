@@ -22,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 120px;
+  height: 100px;
 }
 .nav-logo {
   display: flex;
@@ -57,4 +57,54 @@
 .follow-us {
   border-radius: 8px;
   background: rgba(11, 2, 35, 0.1);
+}
+
+/* banner section start from here  */
+.banner-con {
+  display: flex;
+  gap: 150px;
+  align-items: center;
+}
+.banner-left-con {
+  padding: 110px 0px;
+}
+.banner-left-title {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.banner-left-subtitle {
+  font-family: Work Sans;
+  font-size: 95px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-left-pera {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 15px 0px;
+}
+.banner-btn,
+.banner-btn1 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 48px;
+  padding: 21px 40px;
+  background-color: var(--primary-color);
+  border: 0;
+  margin-top: 40px;
+}
+.banner-btn1 {
+  background-color: #4ec5f7;
+}
+.banner-right > img {
+  width: 480px;
 }
