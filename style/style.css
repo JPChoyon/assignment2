@@ -146,7 +146,44 @@
   line-height: 24px;
 }
 
+/* instant gaming section style  */
+.instant-left > h2 > span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.instant-left > h2 {
+  text-align: right;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.instant-left > p {
+  color: #534c64;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.instant {
+  display: flex;
+  gap: 100px;
+  margin-top: 100px;
+}
+.instan-img > img {
+  width: 440px;
+  border: 10px;
+}
+.instant-over-img > img {
+  width: 150px;
+  margin-top: -136px;
+  margin-left: -60px;
+}
+
 /* responsive for mobile devices  */
+
 @media screen and (max-width: 576px) {
   /* header section start  */
   .main-con {
@@ -177,6 +214,20 @@
   .card,
   .card-img > img {
     width: 400px;
+  }
+  /* instant gaming start from here  */
+  .instant {
+    flex-direction: column;
+  }
+  .instan-img > img {
+    width: 275px;
+    border: 10px;
+    padding-left: 110px;
+  }
+  .instant-over-img > img {
+    width: 110px;
+    margin-top: -95px;
+    margin-left: 58px;
   }
 }
 
@@ -210,5 +261,14 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     margin: 30px 120px;
+  }
+  /* instant gaming start from here  */
+  .instant {
+    flex-direction: column;
+    align-items: center;
+  }
+  .instant-left {
+    width: 75%;
+    margin: 0 auto;
   }
 }
