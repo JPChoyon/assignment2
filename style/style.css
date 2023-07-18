@@ -64,6 +64,7 @@
   display: flex;
   gap: 150px;
   align-items: center;
+  background: #fff;
 }
 .banner-left-con {
   padding: 110px 0px;
@@ -109,6 +110,42 @@
   width: 480px;
 }
 
+/* gaming section start  */
+.gaming-top > h2 {
+  color: #0b0223;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+}
+.gaming-top > h2 > span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+}
+.gaming-top > p {
+  color: #534c64;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.gaming-card-con {
+  display: flex;
+  gap: 20px;
+  margin: 35px 0px;
+}
+.card-img > img {
+  width: 222px;
+}
+.card-des {
+  color: #534c64;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
 /* responsive for mobile devices  */
 @media screen and (max-width: 576px) {
   /* header section start  */
@@ -129,6 +166,17 @@
   .banner-left-con,
   .banner-right {
     padding: 10px 0px;
+  }
+
+  /* gaming section start  */
+  .gaming-card-con {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card,
+  .card-img > img {
+    width: 400px;
   }
 }
 
@@ -155,5 +203,12 @@
   }
   .banner-right > img {
     width: 280px;
+  }
+  /* gaming section start  */
+  .gaming-card-con {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 30px 120px;
   }
 }
