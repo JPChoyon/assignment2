@@ -108,3 +108,52 @@
 .banner-right > img {
   width: 480px;
 }
+
+/* responsive for mobile devices  */
+@media screen and (max-width: 576px) {
+  /* header section start  */
+  .main-con {
+    padding: 0px;
+  }
+  .nav-con,
+  .nav-left-con > ul,
+  .banner-con {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 0px;
+  }
+  .banner-con {
+    flex-direction: column-reverse;
+  }
+  .banner-left-con,
+  .banner-right {
+    padding: 10px 0px;
+  }
+}
+
+/* responsive for tablet devices  */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  /* header section  */
+  .main-con {
+    padding: 0px;
+    margin: auto;
+    justify-content: center;
+  }
+  .banner-con {
+    gap: 0px;
+  }
+  .banner-left-title {
+    font-size: 30px;
+  }
+  .banner-left-subtitle {
+    font-size: 60px;
+  }
+  .banner-left-pera {
+    font-size: 14px;
+  }
+  .banner-right > img {
+    width: 280px;
+  }
+}
