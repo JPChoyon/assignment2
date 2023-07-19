@@ -45,6 +45,7 @@
 .nav-left-con > ul {
   display: flex;
   gap: 32px;
+  align-items: center;
 }
 .nav-item {
   list-style: none;
@@ -52,11 +53,14 @@
   text-align: center;
   font-size: 18px;
   font-weight: 500;
-  padding: 15px 22px;
+  padding: 20px;
 }
 .follow-us {
   border-radius: 8px;
   background: rgba(11, 2, 35, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* banner section start from here  */
@@ -90,6 +94,8 @@
   font-size: 20px;
   font-weight: 500;
   margin: 15px 0px;
+  gap: 5px;
+  display: flex;
 }
 .banner-btn,
 .banner-btn1 {
