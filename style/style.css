@@ -142,8 +142,13 @@
   gap: 20px;
   margin: 35px 0px;
 }
-.card-img > img {
+.card-img {
   width: 222px;
+  position: relative;
+}
+.card-img > img {
+  width: 100%;
+  display: block;
 }
 .card-des {
   color: #534c64;
@@ -151,10 +156,28 @@
   font-weight: 500;
   line-height: 24px;
 }
-.hover-card > img {
-  background-image: url(../images/Rectangle\ 7.png),
-    linear-gradient((0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%));
-  background-blend-mode: overlay;
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 16px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  color: var(--primary-color);
+  display: none;
+}
+.overlay-con {
+  margin: 40% 30%;
+  text-align: center;
+}
+.card-hover:hover .overlay {
+  display: block;
 }
 
 /* instant gaming section style  */
@@ -308,6 +331,14 @@ footer {
   .card-img > img {
     width: 360px;
   }
+  /* .overlay-con {
+    margin: 50%;
+    text-align: center;
+  } */
+  .card-hover:hover .overlay {
+    display: block;
+    width: 360px;
+  }
   /* instant gaming start from here  */
   .instant {
     flex-direction: column;
@@ -415,7 +446,6 @@ footer {
     width: 75%;
     margin: 0 auto;
   }
-  /* gamer section start from here  */
   /* gamer section start from here  */
 
   .gamer {
